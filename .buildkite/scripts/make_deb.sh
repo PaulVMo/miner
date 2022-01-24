@@ -11,6 +11,9 @@ fpm -n validator \
     -t deb \
     --depends libssl1.1 \
     --depends libsodium23 \
+    --depends libncurses5 \
+    --depends dbus \
+    --depends libstdc++6 \
     --deb-systemd deb/miner.service \
     --deb-no-default-config-files \
     _build/validator/rel/=/var/helium
